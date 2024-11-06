@@ -14,7 +14,7 @@
 <th:block th:each ="cards:${cards}">
   <img
 
-        th:src="@{/images/{name}(name=${cards})}"
+        th:src="@{/images/{imageName}(imageName=${cards})}"
         alt="카드 이미지"
         width="200px"/>
 </th:block>
