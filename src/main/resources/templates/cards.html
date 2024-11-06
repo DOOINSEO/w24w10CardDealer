@@ -11,10 +11,12 @@
 <!-- @{} = Thymeleaf에서 url을 표현하는 구문-->
 <!-- alt = 이미지를 대체하는 텍스트를 정의 -->
 <!-- th:src="@{'/images/' + ${cards}}"같은 표현 -->
-<img
+<th:block th:each ="cards:${cards}">
+  <img
 
         th:src="@{/images/{name}(name=${cards})}"
         alt="카드 이미지"
         width="200px"/>
+</th:block>
 </body>
 </html>
